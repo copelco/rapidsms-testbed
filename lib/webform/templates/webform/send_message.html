@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Send Message{% endblock %}
+
+{% block content %}
+<div class="module">
+    <h2>Send Message</h2>
+    <form method="POST" action="#" id="message-form">
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <div class='form-action'>
+            <input type='submit' name='submit' value="Send Message" />
+        </div>
+    </form>
+</div>
+{% endblock %}
