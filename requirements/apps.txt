@@ -1,0 +1,2 @@
+django==1.2.4
+-e git+http://github.com/rapidsms/rapidsms.git#egg=rapidsms
