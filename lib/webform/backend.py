@@ -3,7 +3,5 @@ from routerq.backends import BackendBase
 
 class WebformBackend(BackendBase):
 
-    name = 'webform'
-
-    def outgoing(self, msg):
+    def send(self, msg):
         self.debug(msg)

@@ -36,8 +36,8 @@ INSTALLED_BACKENDS = {
     #    "ENGINE": "rapidsms.backends.gsm,
     #    "PORT": "/dev/ttyUSB1"
     #},
-    "message_tester": {
-        "ENGINE": "rapidsms.backends.bucket",
+    "webform": {
+        "ENGINE": "webform.backend",
     }
 }
 
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
     # common dependencies (which don't clutter up the ui).
     "rapidsms.contrib.handlers",
-    "rapidsms.contrib.ajax",
+    # "rapidsms.contrib.ajax",
 
     # enable the django admin using a little shim app (which includes
     # the required urlpatterns), and a bunch of undocumented apps that

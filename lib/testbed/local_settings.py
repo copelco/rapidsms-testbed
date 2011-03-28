@@ -15,3 +15,6 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 SERVE_STATIC_MEDIA = True
 
+import sys
+import logging
+logging.basicConfig(level=logging.DEBUG)
